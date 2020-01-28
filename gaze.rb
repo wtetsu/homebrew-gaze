@@ -2,8 +2,8 @@ class Gaze < Formula
   desc "Execute commands for you"
   homepage "https://github.com/wtetsu/gaze/"
   url "https://github.com/wtetsu/gaze.git",
-      :tag      => "v0.0.6",
-      :revision => "57fbea2517e29fd1433376b205c5b8d800c5179c"
+      :tag      => "v0.0.7",
+      :revision => "374a2030749c2b71e55367a2180fc78f206a7106"
 
   depends_on "go" => :build
 
