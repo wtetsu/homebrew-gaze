@@ -1,1 +1,1 @@
-Homebrew Formulae for [Gaze](https://github.com/wtetsu/gaze).
+Homebrew formula for [Gaze](https://github.com/wtetsu/gaze).
