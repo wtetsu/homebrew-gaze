@@ -13,6 +13,20 @@ class Gaze < Formula
   end
 
   test do
-    system "#{bin}/gaze", "--version"
+    (testpath/"test.txt").write("init")
+    o = IO.popen("#{bin}/gaze -c 'cp test.txt out.txt' test.txt")
+    thread = Thread.new {
+      10.times {|i|
+        File.write("test.txt", "hello, world!") rescue nil
+        sleep 1
+      }
+    }
+    10.times {
+      break if File.exist?("out.txt")
+      sleep 1
+    }
+    thread.terminate
+    assert("hello, world!", File.read("out.txt"))
+    Process.kill("TERM", o.pid)
   end
 end
