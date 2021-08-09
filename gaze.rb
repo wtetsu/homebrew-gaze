@@ -1,8 +1,8 @@
 class Gaze < Formula
   desc "Execute commands for you"
   homepage "https://github.com/wtetsu/gaze"
-  url "https://github.com/wtetsu/gaze/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "04466e28487e43d1f68fd9da749391ff1db8a1aca2761308729680d39600d1cc"
+  url "https://github.com/wtetsu/gaze/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "c5fe124f950604d9ad054d29bed925edbe40ea477d495524c95631b7440711aa"
   license "MIT"
 
   depends_on "go" => :build
